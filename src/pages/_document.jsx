@@ -1,8 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
-// O arquivo _document.jsx é usado para manipular o document da página
-// posso adicionar coisas e exibir ela como eu desejar através do método render()
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const sheet = new ServerStyleSheet();
